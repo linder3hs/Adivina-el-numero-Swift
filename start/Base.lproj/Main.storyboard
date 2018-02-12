@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,86 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="start" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivina el numero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogr-ZL-OXf">
+                                <rect key="frame" x="16" y="29" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="iP8-hG-fAS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intentos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtM-7x-5Fj">
+                                <rect key="frame" x="16" y="140" width="62.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O99-oi-U18">
+                                <rect key="frame" x="180" y="139.5" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivina un numero del 0 - 9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niJ-ot-yS8">
+                                <rect key="frame" x="16" y="201.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJa-H2-Fza">
+                                <rect key="frame" x="16" y="89" width="343" height="31"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-Mj-eLe">
+                                <rect key="frame" x="16" y="278" width="343" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Validar"/>
+                                <connections>
+                                    <action selector="validar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a9c-z3-pd9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Adk-Mj-eLe" secondAttribute="bottom" constant="349" id="6k9-3d-hlc"/>
+                            <constraint firstItem="O99-oi-U18" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="7WV-Fq-ZbL"/>
+                            <constraint firstItem="TtM-7x-5Fj" firstAttribute="top" secondItem="wJa-H2-Fza" secondAttribute="bottom" constant="20" id="Cn8-WG-5KJ"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="top" secondItem="ogr-ZL-OXf" secondAttribute="bottom" constant="39" id="GVS-T2-Tfq"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="leading" secondItem="Adk-Mj-eLe" secondAttribute="leading" id="H2k-1D-zO3"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="leading" secondItem="niJ-ot-yS8" secondAttribute="leading" id="KlD-Iv-7nn"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="trailing" secondItem="niJ-ot-yS8" secondAttribute="trailing" id="XZz-6c-dir"/>
+                            <constraint firstItem="ogr-ZL-OXf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dni-te-bKV"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="leading" secondItem="ogr-ZL-OXf" secondAttribute="leading" id="eYn-Kg-Hj2"/>
+                            <constraint firstItem="O99-oi-U18" firstAttribute="baseline" secondItem="TtM-7x-5Fj" secondAttribute="baseline" id="f7F-iB-Q5C"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="leading" secondItem="TtM-7x-5Fj" secondAttribute="leading" id="fMR-7X-zKB"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="trailing" secondItem="ogr-ZL-OXf" secondAttribute="trailing" id="iZc-NQ-q7a"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TtM-7x-5Fj" secondAttribute="trailing" constant="20" symbolic="YES" id="jUe-Fj-Dl4"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="trailing" secondItem="O99-oi-U18" secondAttribute="trailing" id="jgg-7M-JT1"/>
+                            <constraint firstItem="Adk-Mj-eLe" firstAttribute="top" secondItem="niJ-ot-yS8" secondAttribute="bottom" constant="56" id="k6c-UM-B2e"/>
+                            <constraint firstItem="ogr-ZL-OXf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="nKq-Cu-Ruh"/>
+                            <constraint firstItem="wJa-H2-Fza" firstAttribute="trailing" secondItem="Adk-Mj-eLe" secondAttribute="trailing" id="pPd-Nr-oi6"/>
+                            <constraint firstItem="niJ-ot-yS8" firstAttribute="top" secondItem="TtM-7x-5Fj" secondAttribute="bottom" constant="41" id="vcI-gP-l2K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ogr-ZL-OXf" secondAttribute="trailing" constant="16" id="y04-v5-t1L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="intentos" destination="O99-oi-U18" id="G0l-z1-fzK"/>
+                        <outlet property="message" destination="niJ-ot-yS8" id="XbE-pr-cYE"/>
+                        <outlet property="numberTxt" destination="wJa-H2-Fza" id="qVM-96-QAc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

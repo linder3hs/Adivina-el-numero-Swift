@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>132898839856-qhqi5j2ieun1baavahfbjt8ocg3vkg2r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.132898839856-qhqi5j2ieun1baavahfbjt8ocg3vkg2r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBsSRVKiD5-cKdsszPiqQSdDyPgDmpG-PY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>132898839856</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>linderTec.start</string>
+	<key>PROJECT_ID</key>
+	<string>learnios-324d2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>learnios-324d2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:132898839856:ios:7eee11b0b1d82c10</string>
+	<key>DATABASE_URL</key>
+	<string>https://learnios-324d2.firebaseio.com</string>
+</dict>
+</plist>
