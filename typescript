@@ -1,0 +1,110 @@
+Script started on Mon Feb 12 14:43:52 2018
+[?1034hbash-3.2$ ls
+Podfile			start			startTests
+Podfile.lock		start.xcodeproj		startUITests
+Pods			start.xcworkspace	typescript
+bash-3.2$ cd[K[Kcd start
+bash-3.2$ ls
+AppDelegate.swift		Info.plist
+Assets.xcassets			LoginViewController.swift
+Base.lproj			ViewController.swift
+GoogleService-Info.plist	linderLogo.png
+bash-3.2$ q
+bash: q: command not found
+bash-3.2$  [Klisy[Kt
+bash: list: command not found
+bash-3.2$ l[Kll
+bash: ll: command not found
+bash-3.2$ ll -a
+bash: ll: command not found
+bash-3.2$ ls -a
+.				GoogleService-Info.plist
+..				Info.plist
+AppDelegate.swift		LoginViewController.swift
+Assets.xcassets			ViewController.swift
+Base.lproj			linderLogo.png
+bash-3.2$ cd ..
+bash-3.2$ cd /
+bash-3.2$ pwd
+/
+bash-3.2$ cd /home/m[K
+bash-3.2$ L
+bash: L: command not found
+bash-3.2$ ks
+bash: ks: command not found
+bash-3.2$ a[Kls
+bash-3.2$ clear 
+[H[2Jbash-3.2$ spu[K[Kource 
+bash: source: filename argument required
+source: usage: source filename [arguments]
+bash-3.2$ source linder.tex
+bash: linder.tex: No such file or directory
+bash-3.2$ source linder.text
+bash: linder.text: No such file or directory
+bash-3.2$ source linder.text[K[K[K[K[K[K[K[K[K[K[KDocue[Kments
+bash: Documents: No such file or directory
+bash-3.2$ ls
+bash-3.2$ cd /ub[K[Khome/
+bash-3.2$ cd /Applications/
+bash-3.2$ ls
+Android File Transfer.app	Pages.app
+Android Studio.app		Photo Booth.app
+App Store.app			Photos.app
+Arduino.app			PhpStorm.app
+Atom.app			PostgreSQL 9.6
+Automator.app			Postman.app
+Balsamiq Mockups 3.app		Preview.app
+Bitcoin.com.app			PyCharm CE.app
+CLion.app			Python 3.6
+Calculator.app			QuickTime Player.app
+Calendar.app			Reminders.app
+Chess.app			Rider 2017.1.1.app
+Contacts.app			SHAREit_OutSandbox.app
+DVD Player.app			SQLDeveloper.app
+Dashboard.app			STS.app
+Dictionary.app			Safari.app
+Docker.app			Siri.app
+DrCleanerPreview.app		Sketch.app
+EaseUS Data Recovery Wizard.app	Skype.app
+Eclipse.app			Slack.app
+FaceTime.app			Spotify.app
+FileZilla.app			Steam.app
+Firefox.app			Stickies.app
+Font Book.app			Streaming.app
+Gameshow.app			Sublime Text.app
+GarageBand.app			System Preferences.app
+GitHub Desktop.app		TextEdit.app
+GitKraken.app			Time Machine.app
+Google Chrome.app		Tuxera Disk Manager.app
+Grammarly.app			Utilities
+Image Capture.app		VMware Fusion.app
+IntelliJ IDEA.app		Video Converter Lite.app
+Justinmind.app			VirtualBox.app
+Keynote.app			Visual Paradigm.app
+LanScan.app			Visual Studio Code.app
+Launchpad.app			Visual Studio.app
+LibreOffice.app			WebStorm.app
+MAMP				WhatsApp.app
+MAMP PRO			WhatsApp.localized
+MAMP_2017-09-04_23-38-55	Wondershare Filmora.app
+Mail.app			XAMPP.app
+Maps.app			Xamarin Profiler.app
+Messages.app			Xamarin Workbooks.app
+Microsoft Excel.app		Xcode.app
+Microsoft OneNote.app		apache-maven-3.1.1
+Microsoft Outlook.app		iBooks.app
+Microsoft PowerPoint.app	iMovie.app
+Microsoft Remote Desktop.app	iTunes.app
+Microsoft Word.app		pgAdmin 4.app
+Mission Control.app		unrar.app
+MySQLWorkbench.app		unrarpro.app
+NetBeans			zoom.us.app
+Notes.app
+bash-3.2$ spindump [K[K[K[K[K[K[Kou[K[K[Kource N
+NetBeans/  Notes.app/ 
+bash-3.2$ source NE[KetBeans/
+bash: source: NetBeans/: is a directory
+bash-3.2$ l[Kexit
+exit
+
+Script done on Mon Feb 12 15:42:40 2018
