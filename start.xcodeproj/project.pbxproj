@@ -19,6 +19,7 @@
 		C65695762030F328002C5537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65695742030F328002C5537 /* LaunchScreen.storyboard */; };
 		C65695812030F328002C5537 /* startTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65695802030F328002C5537 /* startTests.swift */; };
 		C656958C2030F329002C5537 /* startUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656958B2030F329002C5537 /* startUITests.swift */; };
+		C67A041B203502780006B629 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67A041A203502780006B629 /* MapController.swift */; };
 		E33A01EA57CD9C208A69199B /* Pods_start.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C80B8C4C4AEC512598E3E11 /* Pods_start.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		C65695872030F328002C5537 /* startUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = startUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C656958B2030F329002C5537 /* startUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startUITests.swift; sourceTree = "<group>"; };
 		C656958D2030F329002C5537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67A041A203502780006B629 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		E95C2D5DFA535DF8D15044D0 /* Pods-startTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-startTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-startTests/Pods-startTests.release.xcconfig"; sourceTree = "<group>"; };
 		F395C7ACE3C1495A1D4FF8BB /* Pods-start.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-start.release.xcconfig"; path = "Pods/Target Support Files/Pods-start/Pods-start.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 				C65695772030F328002C5537 /* Info.plist */,
 				C60E58F2203213190030CFE7 /* LoginViewController.swift */,
 				C63B71C820324A6F00F82725 /* Home.swift */,
+				C67A041A203502780006B629 /* MapController.swift */,
 			);
 			path = start;
 			sourceTree = "<group>";
@@ -434,9 +437,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-start/Pods-start-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -475,6 +483,7 @@
 				C60E58F3203213190030CFE7 /* LoginViewController.swift in Sources */,
 				C656956E2030F328002C5537 /* ViewController.swift in Sources */,
 				C63B71C920324A6F00F82725 /* Home.swift in Sources */,
+				C67A041B203502780006B629 /* MapController.swift in Sources */,
 				C656956C2030F328002C5537 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

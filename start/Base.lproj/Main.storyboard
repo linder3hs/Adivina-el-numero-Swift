@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="689" y="824"/>
         </scene>
-        <!--View Controller-->
+        <!--Map Controller-->
         <scene sceneID="c6x-CH-JW8">
             <objects>
-                <viewController storyboardIdentifier="Home" id="AjX-hA-oku" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="AjX-hA-oku" customClass="MapController" customModule="start" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cyQ-xI-bBP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seb-Va-9HG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="134"/>
+            <point key="canvasLocation" x="1497" y="115"/>
         </scene>
     </scenes>
 </document>
