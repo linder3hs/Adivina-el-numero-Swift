@@ -192,7 +192,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2z-9D-DRM">
-                                <rect key="frame" x="164" y="220" width="46" height="30"/>
+                                <rect key="frame" x="16" y="220" width="343" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -204,15 +204,22 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="1tX-jM-Qdm" eventType="touchUpInside" id="4g9-UD-cbb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lIl-zj-gG5"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="g3W-Pt-BKj" id="Ivr-z4-W6X"/>
+                        <outlet property="username" destination="ODz-cG-rx5" id="d0H-EJ-qed"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fS-kV-NF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826" y="909"/>
+            <point key="canvasLocation" x="689" y="824"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c6x-CH-JW8">
